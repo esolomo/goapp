@@ -7,7 +7,17 @@
   <fileSets>
     <fileSet>
       <directory>${app.dir}</directory>
-      <outputDirectory>${target.dir}</outputDirectory>
+      <outputDirectory>${target.dir}/bin</outputDirectory>
+      <fileMode>0777</fileMode>
+    </fileSet>
+    <fileSet>
+      <directory>${project.basedir}/src/main/app/confd</directory>
+      <outputDirectory>${target.dir}/confd</outputDirectory>
+      <fileMode>0777</fileMode>
+    </fileSet>
+    <fileSet>
+      <directory>${project.basedir}/src/main/app/bin</directory>
+      <outputDirectory>${target.dir}/bin</outputDirectory>
       <fileMode>0777</fileMode>
     </fileSet>
   </fileSets>
